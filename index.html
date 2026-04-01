@@ -1,137 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yoga Life Website</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial;
-}
-
-header{
-background:#0a7f5a;
-color:white;
-padding:20px;
-text-align:center;
-}
-
-nav{
-background:#055f45;
-padding:10px;
-text-align:center;
-}
-
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.hero{
-background:#e8f5e9;
-padding:60px;
-text-align:center;
-}
-
-.section{
-padding:40px;
-text-align:center;
-}
-
-.cards{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.card{
-background:white;
-padding:20px;
-width:200px;
-box-shadow:0px 0px 10px gray;
-}
-
-.footer{
-background:#055f45;
-color:white;
-padding:15px;
-text-align:center;
-}
-
-button{
-padding:10px 20px;
-background:#0a7f5a;
-color:white;
-border:none;
-cursor:pointer;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga Lifestyle</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-<h1>Yoga Life</h1>
-<p>Improve Your Mind & Body</p>
-</header>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Yoga Life</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Benefits</a>
-<a href="#">Classes</a>
-<a href="#">Contact</a>
-</nav>
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="overlay">
+      <h1>Transform Your Mind & Body with Yoga</h1>
+      <a href="#classes" class="btn">Explore Classes</a>
+    </div>
+  </section>
 
-<div class="hero">
-<h2>Welcome to Yoga Life Website</h2>
-<p>Start your healthy lifestyle journey today</p>
-<button>Join Now</button>
-</div>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Yoga</h2>
+      <div class="about-content">
+        <img src="https://images.pexels.com/photos/4056532/pexels-photo-4056532.jpeg" alt="Yoga">
+        <p>Yoga is a holistic practice for improving physical health, flexibility, and mental well-being. Join our classes to experience stress relief and a healthier lifestyle.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="section">
-<h2>Benefits of Yoga</h2>
+  <!-- Benefits Section -->
+  <section id="benefits" class="benefits-section">
+    <div class="container">
+      <h2>Benefits of Yoga</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Flexibility</h3>
+          <p>Improve your body flexibility and mobility with daily yoga practice.</p>
+        </div>
+        <div class="card">
+          <h3>Stress Relief</h3>
+          <p>Reduce stress, anxiety, and improve mental clarity through meditation.</p>
+        </div>
+        <div class="card">
+          <h3>Healthy Lifestyle</h3>
+          <p>Boost immunity, maintain fitness, and enjoy a balanced lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="cards">
+  <!-- Classes Section -->
+  <section id="classes" class="classes-section">
+    <div class="container">
+      <h2>Our Classes</h2>
+      <div class="class-cards">
+        <div class="class-card">
+          <h3>Morning Yoga</h3>
+          <p>Start your day with energy. Timing: 6AM - 7AM</p>
+        </div>
+        <div class="class-card">
+          <h3>Evening Yoga</h3>
+          <p>Relax and unwind. Timing: 6PM - 7PM</p>
+        </div>
+        <div class="class-card">
+          <h3>Meditation</h3>
+          <p>Improve focus and peace of mind. Timing: 7PM - 7:30PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h3>Reduce Stress</h3>
-<p>Improve mental peace</p>
-</div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-<div class="card">
-<h3>Stay Fit</h3>
-<p>Increase body flexibility</p>
-</div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Yoga Lifestyle. All rights reserved.</p>
+  </footer>
 
-<div class="card">
-<h3>Better Sleep</h3>
-<p>Improve sleeping habits</p>
-</div>
+  <script src="script.js"></script>
+</body>
+</html>
+[11:19, 1/4/2026] pawan Singh: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga Lifestyle</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-</div>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Yoga Life</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
 
-</div>
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="overlay">
+      <h1>Transform Your Mind & Body with Yoga</h1>
+      <a href="#classes" class="btn">Explore Classes</a>
+    </div>
+  </section>
 
-<div class="section">
-<h2>About Yoga</h2>
-<p>Yoga helps improve flexibility, strength, posture and breathing.</p>
-</div>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Yoga</h2>
+      <div class="about-content">
+        <img src="https://images.pexels.com/photos/4056532/pexels-photo-4056532.jpeg" alt="Yoga">
+        <p>Yoga is a holistic practice for improving physical health, flexibility, and mental well-being. Join our classes to experience stress relief and a healthier lifestyle.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="section">
-<h2>Contact Us</h2>
-<p>Email: pawansingh97900@gmail.com</p>
-</div>
+  <!-- Benefits Section -->
+  <section id="benefits" class="benefits-section">
+    <div class="container">
+      <h2>Benefits of Yoga</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Flexibility</h3>
+          <p>Improve your body flexibility and mobility with daily yoga practice.</p>
+        </div>
+        <div class="card">
+          <h3>Stress Relief</h3>
+          <p>Reduce stress, anxiety, and improve mental clarity through meditation.</p>
+        </div>
+        <div class="card">
+          <h3>Healthy Lifestyle</h3>
+          <p>Boost immunity, maintain fitness, and enjoy a balanced lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="footer">
-<p>© 2026 Yoga Life | Created by Pawan Singh</p>
-</div>
+  <!-- Classes Section -->
+  <section id="classes" class="classes-section">
+    <div class="container">
+      <h2>Our Classes</h2>
+      <div class="class-cards">
+        <div class="class-card">
+          <h3>Morning Yoga</h3>
+          <p>Start your day with energy. Timing: 6AM - 7AM</p>
+        </div>
+        <div class="class-card">
+          <h3>Evening Yoga</h3>
+          <p>Relax and unwind. Timing: 6PM - 7PM</p>
+        </div>
+        <div class="class-card">
+          <h3>Meditation</h3>
+          <p>Improve focus and peace of mind. Timing: 7PM - 7:30PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Yoga Lifestyle. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
