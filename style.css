@@ -1,0 +1,201 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+nav .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+nav .nav-links li {
+  margin-left: 25px;
+}
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav .nav-links a:hover {
+  color: #FFD700;
+}
+
+/* Home Section */
+.home-section {
+  height: 100vh;
+  background: url('https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home-section .overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 50px;
+  text-align: center;
+}
+.home-section h1 {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.home-section .btn {
+  padding: 12px 25px;
+  background: #FFD700;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.home-section .btn:hover {
+  background: #FFA500;
+}
+
+/* Sections */
+section {
+  padding: 100px 50px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  color: #333;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.about-content img {
+  width: 400px;
+  border-radius: 10px;
+}
+.about-content p {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Benefits Section */
+.cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background: #f2f2f2;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  background: #FFD700;
+  color: #000;
+}
+
+/* Classes Section */
+.class-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.class-card {
+  background: #f2f2f2;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  transition: 0.3s;
+}
+.class-card:hover {
+  background: #FFD700;
+  color: #000;
+  transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-section input, .contact-section textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+.contact-section button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #FFD700;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-section button:hover {
+  background: #FFA500;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #222;
+  color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  nav .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+  }
+  nav .nav-links li {
+    margin: 15px 0;
+  }
+  nav .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+}
